@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arundhati Jewellers - 25 Years of Trust & Purity</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              maroon: {
+                600: "#722F37",
+                700: "#5D252A",
+                800: "#481C21",
+              },
+              gold: {
+                400: "#FFD700",
+                500: "#FFC107",
+                600: "#FF8F00",
+              },
+            },
+            animation: {
+              float: "float 3s ease-in-out infinite",
+              shimmer: "shimmer 2s linear infinite",
+              fadeInUp: "fadeInUp 0.8s ease-out",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+              shimmer: {
+                "0%": { backgroundPosition: "-200% 0" },
+                "100%": { backgroundPosition: "200% 0" },
+              },
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(30px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .gradient-gold {
+        background: linear-gradient(
+          135deg,
+          #ffd700 0%,
+          #ff8f00 50%,
+          #ffd700 100%
+        );
+        background-size: 200% 200%;
+        animation: shimmer 2s linear infinite;
+      }
+
+      .text-shadow-gold {
+        text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.3);
+      }
+
+      .border-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23FFD700' fill-opacity='0.1'%3E%3Cpath d='M10 0l3 7h7l-5.5 4 2 7L10 14l-6.5 4 2-7L0 7h7l3-7z'/%3E%3C/g%3E%3C/svg%3E");
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-amber-50 to-orange-100 min-h-screen">
+    <!-- Header Banner -->
+    <header
+      class="relative bg-gradient-to-r from-[#481C21] via-[#5D252A] to-[#481C21] text-white overflow-hidden"
+    >
+      <div class="absolute inset-0 border-pattern opacity-20"></div>
+      <div class="relative container mx-auto px-4 py-16 text-center">
+        <img src="./assets/logo-gold.png" alt="" class="mx-auto" />
+        <div class="animate-fadeInUp">
+          <!-- <h1 class="text-5xl md:text-7xl font-bold mb-4 text-shadow-gold">
+            <span class="text-yellow-400">Arundhati</span>
+            <span class="text-white">Jewellers</span>
+          </h1> -->
+          <p class="text-2xl md:text-4xl mb-4 text-[#FFD700] font-semibold">
+            25 Years of Trust & Purity
+          </p>
+          <p class="text-lg md:text-5xl mb-8 text-amber-200 font-medium">
+            ଓଡ଼ିଆ ମାଟିର ସ୍ପର୍ଶ, ଭରଷାର ୨୫ ବର୍ଷ
+          </p>
+          <button
+            onclick="scrollToOffers()"
+            class="bg-gradient-to-r from-[#FFC107] to-[#FF8F00] hover:from-[#FF8F00] hover:to-[#FFC107] text-[#481C21] font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            Explore Bharasa@25 Offers ✨
+          </button>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FFD700] via-[#FFC107] to-[#FFD700]"
+      ></div>
+    </header>
+
+    <!-- Brand Story Section -->
+    <section class="py-16 bg-gradient-to-r from-amber-50 to-orange-50">
+      <div class="container mx-auto px-4 text-center">
+        <div class="max-w-4xl mx-auto animate-fadeInUp">
+          <div class="flex justify-center mb-8">
+            <div
+              class="bg-gradient-to-r from-[#FFD700] to-[#FF8F00] p-4 rounded-full animate-float"
+            >
+              <span class="text-4xl">💎</span>
+            </div>
+          </div>
+          <h2 class="text-3xl font-bold text-[#481C21] mb-6">
+            Odisha's Pride, 25 Years of Sparkling Trust
+          </h2>
+          <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+            For 25 years, Arundhati Jewellers has been creating golden smiles
+            across Odisha. We believe jewellery isn't just for adornment but a
+            bond of trust that lasts generations.
+          </p>
+
+          <!-- 5-Star Promise Badge -->
+          <div
+            class="bg-white rounded-2xl shadow-xl p-8 border-4 border-[#FFD700]"
+          >
+            <h3 class="text-2xl font-bold text-[#481C21] mb-6">
+              🌟 Our 5-Star Promise
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-sm">
+              <div
+                class="text-center p-4 bg-gradient-to-br from-gold-50 to-gold-100 rounded-lg"
+              >
+                <div class="text-2xl mb-2">✨</div>
+                <p class="font-semibold text-[#481C21]">
+                  Lifetime Free Cleaning
+                </p>
+              </div>
+              <div
+                class="text-center p-4 bg-gradient-to-br from-gold-50 to-gold-100 rounded-lg"
+              >
+                <div class="text-2xl mb-2">🔧</div>
+                <p class="font-semibold text-[#481C21]">
+                  Free Polishing & Checkups
+                </p>
+              </div>
+              <div
+                class="text-center p-4 bg-gradient-to-br from-gold-50 to-gold-100 rounded-lg"
+              >
+                <div class="text-2xl mb-2">👨‍💼</div>
+                <p class="font-semibold text-[#481C21]">Expert Guidance</p>
+              </div>
+              <div
+                class="text-center p-4 bg-gradient-to-br from-gold-50 to-gold-100 rounded-lg"
+              >
+                <div class="text-2xl mb-2">✅</div>
+                <p class="font-semibold text-[#481C21]">Guaranteed Purity</p>
+              </div>
+              <div
+                class="text-center p-4 bg-gradient-to-br from-gold-50 to-gold-100 rounded-lg"
+              >
+                <div class="text-2xl mb-2">💰</div>
+                <p class="font-semibold text-[#481C21]">Transparent Pricing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bharasa@25 Highlights -->
+    <section
+      id="offers"
+      class="py-16 bg-gradient-to-r from-[#481C21] to-[#5D252A]"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-white mb-4">
+            Bharasa@25 Special Celebrations
+          </h2>
+          <p class="text-[#FFD700] text-xl">
+            Exciting rewards and mega gifts await you!
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div
+            class="bg-white rounded-xl p-6 text-center shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            <div class="text-4xl mb-4">🎁</div>
+            <h3 class="font-bold text-[#481C21] mb-2">Assured Gifts</h3>
+            <p class="text-gray-600">With every purchase</p>
+          </div>
+          <div
+            class="bg-white rounded-xl p-6 text-center shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            <div class="text-4xl mb-4">🪙</div>
+            <h3 class="font-bold text-[#481C21] mb-2">Free Gold Coins</h3>
+            <p class="text-gray-600">Special rewards</p>
+          </div>
+          <div
+            class="bg-white rounded-xl p-6 text-center shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            <div class="text-4xl mb-4">🏆</div>
+            <h3 class="font-bold text-[#481C21] mb-2">Lakhpati Contest</h3>
+            <p class="text-gray-600">Win big prizes</p>
+          </div>
+          <div
+            class="bg-white rounded-xl p-6 text-center shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            <div class="text-4xl mb-4">📱</div>
+            <h3 class="font-bold text-[#481C21] mb-2">Flexible Booking</h3>
+            <p class="text-gray-600">Easy payment options</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Navigation -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-[#481C21] mb-12">
+          Frequently Asked Questions
+        </h2>
+
+        <!-- FAQ Tabs -->
+        <div class="flex flex-wrap justify-center mb-8 gap-4">
+          <button
+            onclick="showFAQ('general')"
+            class="faq-tab active bg-[#481C21] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-[#5D252A]"
+          >
+            🏛️ General
+          </button>
+          <button
+            onclick="showFAQ('gold')"
+            class="faq-tab bg-[#FFC107] text-[#481C21] px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-[#FF8F00]"
+          >
+            🪙 Gold
+          </button>
+          <button
+            onclick="showFAQ('diamond')"
+            class="faq-tab bg-gray-200 text-[#481C21] px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gray-300"
+          >
+            💎 Diamond
+          </button>
+          <button
+            onclick="showFAQ('silver')"
+            class="faq-tab bg-gray-400 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gray-500"
+          >
+            ⚪ Silver
+          </button>
+        </div>
+
+        <!-- General FAQ Section -->
+        <div id="general-faq" class="faq-section">
+          <div
+            class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 border-2 border-gold-200"
+          >
+            <div class="text-center mb-8">
+              <div class="text-6xl mb-4">🏛️</div>
+              <h3 class="text-3xl font-bold text-[#481C21]">
+                General Information
+              </h3>
+            </div>
+
+            <div class="space-y-6">
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h4 class="font-bold text-[#481C21] mb-3">
+                  What makes Arundhati Jewellers different?
+                </h4>
+                <p class="text-gray-700">
+                  Arundhati Jewellers stands apart with its legacy of trust,
+                  Odisha roots, and the exclusive 5-Star Promise. We believe
+                  jewellery creates bonds of trust that last generations.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h4 class="font-bold text-[#481C21] mb-3">
+                  What is the Bharasa@25 campaign?
+                </h4>
+                <p class="text-gray-700">
+                  We're celebrating 25 years with "ଓଡ଼ିଆ ମାଟିର ସ୍ପର୍ଶ, ଭରଷାର ୨୫
+                  ବର୍ଷ" - honoring Odisha's heritage and our customers' trust
+                  with special offers and exciting rewards.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h4 class="font-bold text-[#481C21] mb-3">
+                  Do you provide certification?
+                </h4>
+                <p class="text-gray-700">
+                  Yes! Every piece of gold and diamond jewellery comes with
+                  certification for authenticity and purity.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-center mt-8">
+              <button
+                class="bg-[#481C21] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#5D252A] transition-all duration-300"
+              >
+                Find Nearest Showroom
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gold FAQ Section -->
+        <div id="gold-faq" class="faq-section hidden">
+          <div
+            class="bg-gradient-to-br from-gold-50 to-gold-100 rounded-2xl p-8 border-2 border-gold-300"
+          >
+            <div class="text-center mb-8">
+              <div class="text-6xl mb-4">🪙</div>
+              <h3 class="text-3xl font-bold text-[#481C21]">Gold Collection</h3>
+            </div>
+
+            <div class="bg-gold-200 rounded-lg p-4 mb-6 text-center">
+              <p class="font-bold text-[#481C21]">
+                🔥 Special Offer: Flexi Booking & Lowest Gold Rate!
+              </p>
+            </div>
+
+            <div class="space-y-6">
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h4 class="font-bold text-[#481C21] mb-3">
+                  What is the purity of gold you provide?
+                </h4>
+                <p class="text-gray-700">
+                  We offer BIS hallmarked gold, ensuring complete authenticity
+                  and purity.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h4 class="font-bold text-[#481C21] mb-3">
+                  Can I invest in gold through Arundhati Jewellers?
+                </h4>
+                <p class="text-gray-700">
+                  Yes! Our Swarna Samriddhi Scheme allows systematic saving with
+                  benefits on gold purchases.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h4 class="font-bold text-[#481C21] mb-3">
+                  Do you provide buyback on gold jewellery?
+                </h4>
+                <p class="text-gray-700">
+                  Yes, we offer fair buyback options based on prevailing market
+                  rates and product condition.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-center mt-8">
+              <button
+                class="bg-[#FFC107] text-[#481C21] px-8 py-3 rounded-full font-semibold hover:bg-[#FF8F00] transition-all duration-300"
+              >
+                Book Your Gold Today
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diamond FAQ Section -->
+        <div id="diamond-faq" class="faq-section hidden">
+          <div
+            class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 border-2 border-blue-200 relative overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 animate-shimmer"
+            ></div>
+            <div class="relative">
+              <div class="text-center mb-8">
+                <div class="text-6xl mb-4">💎</div>
+                <h3 class="text-3xl font-bold text-[#481C21]">
+                  Diamond Collection
+                </h3>
+              </div>
+
+              <div class="bg-blue-100 rounded-lg p-4 mb-6 text-center">
+                <p class="font-bold text-[#481C21]">
+                  ✨ Free Gold Coin with Diamond Purchase!
+                </p>
+              </div>
+
+              <div class="space-y-6">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                  <h4 class="font-bold text-[#481C21] mb-3">
+                    How do I know the diamond is genuine?
+                  </h4>
+                  <p class="text-gray-700">
+                    Every diamond comes with certification from trusted
+                    gemological labs, ensuring authenticity.
+                  </p>
+                </div>
+
+                <div
+                  class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-6 shadow-md border-2 border-blue-200"
+                >
+                  <h4 class="font-bold text-[#481C21] mb-3">
+                    🔬 Advanced Diamond Detection Technology
+                  </h4>
+                  <p class="text-gray-700">
+                    We're the first in Odisha to introduce an advanced Diamond
+                    Purity Detection Machine! This cutting-edge technology
+                    provides instant, precise testing.
+                  </p>
+                  <p class="text-blue-600 font-semibold mt-2">
+                    👉 Exclusive "Only at Arundhati" feature!
+                  </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                  <h4 class="font-bold text-[#481C21] mb-3">
+                    What diamond quality grades do you provide?
+                  </h4>
+                  <p class="text-gray-700">
+                    We offer multiple grades with expert guidance on the 4Cs –
+                    Cut, Colour, Clarity, and Carat.
+                  </p>
+                </div>
+              </div>
+
+              <div class="text-center mt-8">
+                <button
+                  class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-600 hover:to-purple-600 transition-all duration-300"
+                >
+                  Shop Diamond Collection
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silver FAQ Section -->
+        <div id="silver-faq" class="faq-section hidden">
+          <div
+            class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8 border-2 border-gray-300"
+          >
+            <div class="text-center mb-8">
+              <div class="text-6xl mb-4">⚪</div>
+              <h3 class="text-3xl font-bold text-[#481C21]">
+                Silver Collection
+              </h3>
+            </div>
+
+            <div class="bg-gray-300 rounded-lg p-4 mb-6 text-center">
+              <p class="font-bold text-[#481C21]">🎁 Perfect Gifting Choice!</p>
+            </div>
+
+            <div class="space-y-6">
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h4 class="font-bold text-[#481C21] mb-3">
+                  Do you sell pure silver articles?
+                </h4>
+                <p class="text-gray-700">
+                  Yes, we provide authentic silver jewellery and artefacts with
+                  complete quality assurance.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h4 class="font-bold text-[#481C21] mb-3">
+                  Are silver items suitable for gifting?
+                </h4>
+                <p class="text-gray-700">
+                  Definitely! Silver is considered auspicious, and we have a
+                  wide range of gifting options.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h4 class="font-bold text-[#481C21] mb-3">
+                  Do silver products come with after-care?
+                </h4>
+                <p class="text-gray-700">
+                  Yes! As part of our 5-Star Promise, silver jewellery is
+                  eligible for free cleaning and polishing.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-center mt-8">
+              <button
+                class="bg-gray-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-700 transition-all duration-300"
+              >
+                Explore Silver Range
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Footer -->
+    <footer
+      class="bg-gradient-to-r from-[#481C21] to-[#5D252A] text-white py-16"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">
+          ✨ Visit Your Nearest Arundhati Jewellers Showroom
+        </h2>
+        <p class="text-xl mb-8 text-[#FFD700]">
+          Explore timeless collections in Gold, Diamond, and Silver
+        </p>
+        <div class="space-y-4 mb-8">
+          <p class="text-lg">🔗 Find Your Nearest Store</p>
+          <p class="text-lg">
+            📱 Download Swarna Samriddhi App from Google Play Store
+          </p>
+          <p class="text-lg">💬 Quick WhatsApp Updates Available</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <div>
+            <h4 class="font-bold text-[#FFD700] mb-2">Payment Options</h4>
+            <p>UPI, Cards, Net Banking, EMI</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-[#FFD700] mb-2">Services</h4>
+            <p>Custom Designs, Buyback, Exchange</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-[#FFD700] mb-2">Contact</h4>
+            <p>Store Locator | WhatsApp Updates</p>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-[#FFD700]">
+          <p class="text-center text-gold-300">
+            "From Odisha's Soil to Your Heart – 25 Years of Arundhati" ❤️
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function scrollToOffers() {
+        document
+          .getElementById("offers")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      function showFAQ(section) {
+        // Hide all FAQ sections
+        const sections = document.querySelectorAll(".faq-section");
+        sections.forEach((s) => s.classList.add("hidden"));
+
+        // Remove active class from all tabs
+        const tabs = document.querySelectorAll(".faq-tab");
+        tabs.forEach((tab) => {
+          tab.classList.remove("active");
+          tab.classList.remove("bg-[#481C21]", "text-white");
+          tab.classList.add("bg-gray-200", "text-[#481C21]");
+        });
+
+        // Show selected section
+        document.getElementById(section + "-faq").classList.remove("hidden");
+
+        // Activate selected tab
+        event.target.classList.add("active", "bg-[#481C21]", "text-white");
+        event.target.classList.remove("bg-gray-200", "text-[#481C21]");
+      }
+
+      // Add scroll animations
+      window.addEventListener("scroll", () => {
+        const elements = document.querySelectorAll(".animate-fadeInUp");
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add("animate-fadeInUp");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
